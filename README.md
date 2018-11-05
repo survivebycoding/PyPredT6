@@ -9,4 +9,4 @@ For field "Sample nucleotide file" give the path for gene sequence (in fasta for
 For field "Effector feature file" give the path for effector feature set file (in CSV format) of the training set.
 For field "Non-effector feature file" give the path for non-effector feature set file (in CSV format) of the training set.
 Fill the fields and click 'Predict'. Wait for the results.
-The program may not execute the first 2/3 times due to internet connection establishment. It should execute fromthe 4th or 5th time.
+
