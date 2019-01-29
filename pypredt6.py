@@ -59,7 +59,7 @@ def voting(peptide_predict_file,nucleotide_predict_file,effector_train,noneffect
     print('Total number of sequences to be classified: ',total)
     
     import time
-    start_time = time.time()
+    start_time = time.clock()
     import random
     import pandas
     import numpy as np
@@ -253,7 +253,7 @@ def voting(peptide_predict_file,nucleotide_predict_file,effector_train,noneffect
             print('Sequence ',i+1,' is a probable Type 6 Effector')
         else:    
             print('Sequence ',i+1,' is not a Type 6 Effector')
-    end_time = time.time()
+    end_time = time.clock()
     print('Execution time',(end_time-start_time))
 #-----------------------------------------------------------------------------
 
@@ -669,7 +669,7 @@ def featureextraction(peptide_file_name,nucleotide_file_name, total):
     id.close()
 
     print('Extraction of secondary structure and solvent accessibility features done!')
-    with open("featurefile_noneff.csv", 'w') as myfile:
+    with open("featurefile_subset.csv", 'w') as myfile:
       wr = csv.writer(myfile)
       wr.writerows(feature)
     return feature
